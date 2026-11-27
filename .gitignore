@@ -1,0 +1,31 @@
+# Catkin-generated output
+/build/
+/devel/
+/install/
+/logs/
+/build_isolated/
+/devel_isolated/
+/install_isolated/
+.catkin_tools/
+
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+
+# Windows download metadata and editor temporary files
+*:Zone.Identifier
+.DS_Store
+*~
+*.swp
+*.swo
+
+# Large new recordings: existing tracked results are preserved
+*.bag
+*.bag.active
+
+# Local credentials
+.env
+.env.*
+!.env.example
