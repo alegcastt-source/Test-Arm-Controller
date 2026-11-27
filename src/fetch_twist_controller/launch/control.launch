@@ -1,0 +1,10 @@
+<launch>
+  <arg name="frame" default="base_link"/>
+  <arg name="rate" default="100.0"/>
+  <rosparam command="load" file="$(find fetch_twist_controller)/config/plugin.yaml"/>
+  <node pkg="fetch_twist_controller" type="twist_controller.py" name="twist_controller" output="screen" required="true">
+    <rosparam command="load" file="$(find fetch_twist_controller)/config/controller.yaml"/>
+    <param name="default_frame" value="$(arg frame)"/>
+    <param name="rate" value="$(arg rate)"/>
+  </node>
+</launch>

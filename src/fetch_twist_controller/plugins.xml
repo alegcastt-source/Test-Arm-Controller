@@ -1,0 +1,5 @@
+<library path="lib/libfetch_joint_velocity">
+  <class name="fetch_twist_controller/JointVelocityController" type="fetch_twist_controller::JointVelocityController" base_class_type="robot_controllers::Controller">
+    <description>Named joint velocity commands with independent watchdog and limits.</description>
+  </class>
+</library>

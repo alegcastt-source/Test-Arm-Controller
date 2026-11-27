@@ -1,0 +1,4 @@
+<launch>
+  <!-- Restart from a shell sourced AFTER building so Gazebo discovers the plugin. -->
+  <include file="$(find fetch_gazebo)/launch/simulation.launch"/>
+</launch>

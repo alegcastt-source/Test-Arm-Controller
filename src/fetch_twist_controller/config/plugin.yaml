@@ -1,0 +1,20 @@
+fetch_joint_velocity:
+  joints:
+  - shoulder_pan_joint
+  - shoulder_lift_joint
+  - upperarm_roll_joint
+  - elbow_flex_joint
+  - forearm_roll_joint
+  - wrist_flex_joint
+  - wrist_roll_joint
+  velocity_limits:
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  - 0.3
+  position_margin: 0.05
+  type: fetch_twist_controller/JointVelocityController
+  timeout: 0.2
